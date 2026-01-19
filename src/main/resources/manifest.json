@@ -1,0 +1,7 @@
+{
+  "Group": "MysticalAsian",
+  "Name": "ItemLocator",
+  "Version": "1.0.0",
+  "Main": "com.MysticalAsian.ItemLocator.Main",
+  "IncludesAssetPack": true
+}

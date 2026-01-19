@@ -1,0 +1,38 @@
+$C = "../Common.ui";
+Group {
+    Anchor: (Width: 1100, Height: 900);
+    Background: #0A2F3D(0.90);
+    LayoutMode: Top;
+    Padding: (Full: 20);
+
+    Label{
+        Text: "Item Locator";
+        Anchor: (Height: 40);
+        Style: (FontSize: 30, TextColor: #ffffff, Alignment: Center);
+    }
+
+    $C.@TextField #SearchInput {
+        Anchor: (Height: 35);
+        PlaceholderText: "Search for item...";
+    }
+
+    Group{
+        LayoutMode: Top;
+        FlexWeight: 1;
+        Label{
+            Text: "Search Results:";
+            Anchor: (Height: 40);
+            Padding: (Top:5, Bottom: 10);
+            Style: (FontSize: 20, TextColor: #ffffff, Alignment: Center);
+        }
+        Group{
+            LayoutMode: TopScrolling;
+            ScrollbarStyle: $C.@DefaultScrollbarStyle;
+            FlexWeight: 1;
+            Group #ItemIconTable{
+                LayoutMode: Top;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,25 @@
+Button{
+    Anchor: (Width: 125, Height: 125);
+    Padding: (Full: 25);
+    Background: PatchStyle(TexturePath: "../Common/Buttons/Tertiary.png", Border: 10);
+    LayoutMode: Top;
+    Style: (
+        Hovered:(
+            Background: #5F5F58(0.8)
+        ),
+    );
+
+    ItemIcon #ItemIcon{
+        Anchor: (Width: 64, Height: 64, Bottom: 5);
+        Visible: true;
+    }
+
+    Label #ItemName{
+        Style: (
+            FontSize: 12,
+            RenderBold: true,
+            TextColor: #ffffff
+        );
+        Anchor: (Bottom: 5);
+    }
+}
